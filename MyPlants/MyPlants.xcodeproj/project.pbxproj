@@ -13,33 +13,35 @@
 		7B6C31F92BBBECF100F96260 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B6C31F82BBBECF100F96260 /* Assets.xcassets */; };
 		7B6C31FC2BBBECF100F96260 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B6C31FA2BBBECF100F96260 /* LaunchScreen.storyboard */; };
 		7B6C32042BBBEDA900F96260 /* MyPlantsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6C32032BBBEDA900F96260 /* MyPlantsController.swift */; };
-		7B6C32072BBBEE6E00F96260 /* MyPlantCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6C32052BBBEE6E00F96260 /* MyPlantCell.swift */; };
-		7B6C32082BBBEE6E00F96260 /* MyPlantCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7B6C32062BBBEE6E00F96260 /* MyPlantCell.xib */; };
-		7B6C32142BBBF1EC00F96260 /* PopularCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6C32122BBBF1EC00F96260 /* PopularCell.swift */; };
-		7B6C32152BBBF1EC00F96260 /* PopularCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7B6C32132BBBF1EC00F96260 /* PopularCell.xib */; };
-		7B6C321A2BBBFAFF00F96260 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6C32182BBBFAFF00F96260 /* CategoryCell.swift */; };
-		7B6C321B2BBBFAFF00F96260 /* CategoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7B6C32192BBBFAFF00F96260 /* CategoryCell.xib */; };
-		7BA32B972BBD494F0039C855 /* CategorySectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA32B952BBD494F0039C855 /* CategorySectionCell.swift */; };
-		7BA32B982BBD494F0039C855 /* CategorySectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7BA32B962BBD494F0039C855 /* CategorySectionCell.xib */; };
-		7BA32B9B2BBD4DDD0039C855 /* TutorialsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA32B992BBD4DDD0039C855 /* TutorialsCell.swift */; };
-		7BA32B9C2BBD4DDD0039C855 /* TutorialsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7BA32B9A2BBD4DDD0039C855 /* TutorialsCell.xib */; };
-		7BA32BA62BBD63660039C855 /* CategoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA32BA52BBD63660039C855 /* CategoryViewModel.swift */; };
-		7BA32BA92BBD75350039C855 /* TutorialSectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA32BA72BBD75350039C855 /* TutorialSectionCell.swift */; };
-		7BA32BAA2BBD75350039C855 /* TutorialSectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7BA32BA82BBD75350039C855 /* TutorialSectionCell.xib */; };
-		7BA32BAC2BBD78350039C855 /* TutorialViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA32BAB2BBD78350039C855 /* TutorialViewModel.swift */; };
-		7BA32BAE2BBD7E4F0039C855 /* MyPlantViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA32BAD2BBD7E4F0039C855 /* MyPlantViewModel.swift */; };
+		7BD04A882BC00761003AE3DB /* MyPlantCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7BD04A6E2BC0075F003AE3DB /* MyPlantCell.xib */; };
+		7BD04A892BC00761003AE3DB /* CategoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7BD04A6F2BC0075F003AE3DB /* CategoryCell.xib */; };
+		7BD04A8A2BC00761003AE3DB /* CategorySectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7BD04A702BC0075F003AE3DB /* CategorySectionCell.xib */; };
+		7BD04A8B2BC00761003AE3DB /* DescriptionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7BD04A712BC0075F003AE3DB /* DescriptionCell.xib */; };
+		7BD04A8C2BC00761003AE3DB /* DetailCategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD04A722BC0075F003AE3DB /* DetailCategoryCell.swift */; };
+		7BD04A8D2BC00761003AE3DB /* TutorialViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD04A732BC0075F003AE3DB /* TutorialViewModel.swift */; };
+		7BD04A8E2BC00761003AE3DB /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD04A742BC00760003AE3DB /* DetailViewModel.swift */; };
+		7BD04A8F2BC00761003AE3DB /* DetailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7BD04A752BC00760003AE3DB /* DetailCell.xib */; };
+		7BD04A902BC00761003AE3DB /* CategorySectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD04A762BC00760003AE3DB /* CategorySectionCell.swift */; };
+		7BD04A912BC00761003AE3DB /* DetailCategoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7BD04A772BC00760003AE3DB /* DetailCategoryCell.xib */; };
+		7BD04A922BC00761003AE3DB /* TutorialsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD04A782BC00760003AE3DB /* TutorialsCell.swift */; };
+		7BD04A932BC00761003AE3DB /* PopularCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7BD04A792BC00760003AE3DB /* PopularCell.xib */; };
+		7BD04A942BC00761003AE3DB /* PopularCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD04A7A2BC00760003AE3DB /* PopularCell.swift */; };
+		7BD04A952BC00761003AE3DB /* WikipediaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD04A7B2BC00760003AE3DB /* WikipediaCell.swift */; };
+		7BD04A962BC00761003AE3DB /* WikipediaCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7BD04A7C2BC00760003AE3DB /* WikipediaCell.xib */; };
+		7BD04A972BC00761003AE3DB /* DescriptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD04A7D2BC00760003AE3DB /* DescriptionCell.swift */; };
+		7BD04A982BC00761003AE3DB /* TutorialSectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7BD04A7E2BC00760003AE3DB /* TutorialSectionCell.xib */; };
+		7BD04A992BC00761003AE3DB /* TutorialsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7BD04A7F2BC00760003AE3DB /* TutorialsCell.xib */; };
+		7BD04A9A2BC00761003AE3DB /* MyPlantCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD04A802BC00761003AE3DB /* MyPlantCell.swift */; };
+		7BD04A9B2BC00761003AE3DB /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD04A812BC00761003AE3DB /* CategoryCell.swift */; };
+		7BD04A9C2BC00761003AE3DB /* TypeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7BD04A822BC00761003AE3DB /* TypeCell.xib */; };
+		7BD04A9D2BC00761003AE3DB /* TypeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD04A832BC00761003AE3DB /* TypeCell.swift */; };
+		7BD04A9E2BC00761003AE3DB /* MyPlantViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD04A842BC00761003AE3DB /* MyPlantViewModel.swift */; };
+		7BD04A9F2BC00761003AE3DB /* TutorialSectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD04A852BC00761003AE3DB /* TutorialSectionCell.swift */; };
+		7BD04AA02BC00761003AE3DB /* DetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD04A862BC00761003AE3DB /* DetailCell.swift */; };
+		7BD04AA12BC00761003AE3DB /* CategoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD04A872BC00761003AE3DB /* CategoryViewModel.swift */; };
+		7BD04AA52BC008D9003AE3DB /* PlantModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD04AA42BC008D9003AE3DB /* PlantModel.swift */; };
+		7BD04AB12BC009E6003AE3DB /* CategoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD04AB02BC009E6003AE3DB /* CategoryModel.swift */; };
 		7BE1ED552BBE8EA700B99EB4 /* DescriptionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE1ED542BBE8EA700B99EB4 /* DescriptionController.swift */; };
-		7BE1ED592BBEA4B600B99EB4 /* DescriptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE1ED572BBEA4B600B99EB4 /* DescriptionCell.swift */; };
-		7BE1ED5A2BBEA4B600B99EB4 /* DescriptionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7BE1ED582BBEA4B600B99EB4 /* DescriptionCell.xib */; };
-		7BE1ED5D2BBEA8B100B99EB4 /* TypeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE1ED5B2BBEA8B100B99EB4 /* TypeCell.swift */; };
-		7BE1ED5E2BBEA8B100B99EB4 /* TypeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7BE1ED5C2BBEA8B100B99EB4 /* TypeCell.xib */; };
-		7BE1ED622BBEAC5A00B99EB4 /* WikipediaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE1ED602BBEAC5A00B99EB4 /* WikipediaCell.swift */; };
-		7BE1ED632BBEAC5A00B99EB4 /* WikipediaCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7BE1ED612BBEAC5A00B99EB4 /* WikipediaCell.xib */; };
-		7BE1ED682BBEB8F400B99EB4 /* DetailCategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE1ED662BBEB8F300B99EB4 /* DetailCategoryCell.swift */; };
-		7BE1ED692BBEB8F400B99EB4 /* DetailCategoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7BE1ED672BBEB8F300B99EB4 /* DetailCategoryCell.xib */; };
-		7BE1ED6C2BBEB90700B99EB4 /* DetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE1ED6A2BBEB90700B99EB4 /* DetailCell.swift */; };
-		7BE1ED6D2BBEB90700B99EB4 /* DetailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7BE1ED6B2BBEB90700B99EB4 /* DetailCell.xib */; };
-		7BE1ED6F2BBEBAE000B99EB4 /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE1ED6E2BBEBAE000B99EB4 /* DetailViewModel.swift */; };
 		7BE1ED712BBECB7100B99EB4 /* VideoPlayerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE1ED702BBECB7100B99EB4 /* VideoPlayerController.swift */; };
 		7BE1ED752BBECE3F00B99EB4 /* AloeProduct.mov in Resources */ = {isa = PBXBuildFile; fileRef = 7BE1ED742BBECE3F00B99EB4 /* AloeProduct.mov */; };
 		7BE1ED772BBEE29000B99EB4 /* AddController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE1ED762BBEE29000B99EB4 /* AddController.swift */; };
@@ -54,33 +56,35 @@
 		7B6C31FB2BBBECF100F96260 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7B6C31FD2BBBECF100F96260 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7B6C32032BBBEDA900F96260 /* MyPlantsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPlantsController.swift; sourceTree = "<group>"; };
-		7B6C32052BBBEE6E00F96260 /* MyPlantCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPlantCell.swift; sourceTree = "<group>"; };
-		7B6C32062BBBEE6E00F96260 /* MyPlantCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyPlantCell.xib; sourceTree = "<group>"; };
-		7B6C32122BBBF1EC00F96260 /* PopularCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularCell.swift; sourceTree = "<group>"; };
-		7B6C32132BBBF1EC00F96260 /* PopularCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PopularCell.xib; sourceTree = "<group>"; };
-		7B6C32182BBBFAFF00F96260 /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
-		7B6C32192BBBFAFF00F96260 /* CategoryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryCell.xib; sourceTree = "<group>"; };
-		7BA32B952BBD494F0039C855 /* CategorySectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategorySectionCell.swift; sourceTree = "<group>"; };
-		7BA32B962BBD494F0039C855 /* CategorySectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategorySectionCell.xib; sourceTree = "<group>"; };
-		7BA32B992BBD4DDD0039C855 /* TutorialsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialsCell.swift; sourceTree = "<group>"; };
-		7BA32B9A2BBD4DDD0039C855 /* TutorialsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TutorialsCell.xib; sourceTree = "<group>"; };
-		7BA32BA52BBD63660039C855 /* CategoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewModel.swift; sourceTree = "<group>"; };
-		7BA32BA72BBD75350039C855 /* TutorialSectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialSectionCell.swift; sourceTree = "<group>"; };
-		7BA32BA82BBD75350039C855 /* TutorialSectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TutorialSectionCell.xib; sourceTree = "<group>"; };
-		7BA32BAB2BBD78350039C855 /* TutorialViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialViewModel.swift; sourceTree = "<group>"; };
-		7BA32BAD2BBD7E4F0039C855 /* MyPlantViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPlantViewModel.swift; sourceTree = "<group>"; };
+		7BD04A6E2BC0075F003AE3DB /* MyPlantCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyPlantCell.xib; sourceTree = "<group>"; };
+		7BD04A6F2BC0075F003AE3DB /* CategoryCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CategoryCell.xib; sourceTree = "<group>"; };
+		7BD04A702BC0075F003AE3DB /* CategorySectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CategorySectionCell.xib; sourceTree = "<group>"; };
+		7BD04A712BC0075F003AE3DB /* DescriptionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DescriptionCell.xib; sourceTree = "<group>"; };
+		7BD04A722BC0075F003AE3DB /* DetailCategoryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailCategoryCell.swift; sourceTree = "<group>"; };
+		7BD04A732BC0075F003AE3DB /* TutorialViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialViewModel.swift; sourceTree = "<group>"; };
+		7BD04A742BC00760003AE3DB /* DetailViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
+		7BD04A752BC00760003AE3DB /* DetailCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailCell.xib; sourceTree = "<group>"; };
+		7BD04A762BC00760003AE3DB /* CategorySectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategorySectionCell.swift; sourceTree = "<group>"; };
+		7BD04A772BC00760003AE3DB /* DetailCategoryCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailCategoryCell.xib; sourceTree = "<group>"; };
+		7BD04A782BC00760003AE3DB /* TutorialsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialsCell.swift; sourceTree = "<group>"; };
+		7BD04A792BC00760003AE3DB /* PopularCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PopularCell.xib; sourceTree = "<group>"; };
+		7BD04A7A2BC00760003AE3DB /* PopularCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopularCell.swift; sourceTree = "<group>"; };
+		7BD04A7B2BC00760003AE3DB /* WikipediaCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WikipediaCell.swift; sourceTree = "<group>"; };
+		7BD04A7C2BC00760003AE3DB /* WikipediaCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WikipediaCell.xib; sourceTree = "<group>"; };
+		7BD04A7D2BC00760003AE3DB /* DescriptionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DescriptionCell.swift; sourceTree = "<group>"; };
+		7BD04A7E2BC00760003AE3DB /* TutorialSectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TutorialSectionCell.xib; sourceTree = "<group>"; };
+		7BD04A7F2BC00760003AE3DB /* TutorialsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TutorialsCell.xib; sourceTree = "<group>"; };
+		7BD04A802BC00761003AE3DB /* MyPlantCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyPlantCell.swift; sourceTree = "<group>"; };
+		7BD04A812BC00761003AE3DB /* CategoryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
+		7BD04A822BC00761003AE3DB /* TypeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TypeCell.xib; sourceTree = "<group>"; };
+		7BD04A832BC00761003AE3DB /* TypeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TypeCell.swift; sourceTree = "<group>"; };
+		7BD04A842BC00761003AE3DB /* MyPlantViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyPlantViewModel.swift; sourceTree = "<group>"; };
+		7BD04A852BC00761003AE3DB /* TutorialSectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialSectionCell.swift; sourceTree = "<group>"; };
+		7BD04A862BC00761003AE3DB /* DetailCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailCell.swift; sourceTree = "<group>"; };
+		7BD04A872BC00761003AE3DB /* CategoryViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryViewModel.swift; sourceTree = "<group>"; };
+		7BD04AA42BC008D9003AE3DB /* PlantModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantModel.swift; sourceTree = "<group>"; };
+		7BD04AB02BC009E6003AE3DB /* CategoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryModel.swift; sourceTree = "<group>"; };
 		7BE1ED542BBE8EA700B99EB4 /* DescriptionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionController.swift; sourceTree = "<group>"; };
-		7BE1ED572BBEA4B600B99EB4 /* DescriptionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionCell.swift; sourceTree = "<group>"; };
-		7BE1ED582BBEA4B600B99EB4 /* DescriptionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DescriptionCell.xib; sourceTree = "<group>"; };
-		7BE1ED5B2BBEA8B100B99EB4 /* TypeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeCell.swift; sourceTree = "<group>"; };
-		7BE1ED5C2BBEA8B100B99EB4 /* TypeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TypeCell.xib; sourceTree = "<group>"; };
-		7BE1ED602BBEAC5A00B99EB4 /* WikipediaCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WikipediaCell.swift; sourceTree = "<group>"; };
-		7BE1ED612BBEAC5A00B99EB4 /* WikipediaCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WikipediaCell.xib; sourceTree = "<group>"; };
-		7BE1ED662BBEB8F300B99EB4 /* DetailCategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCategoryCell.swift; sourceTree = "<group>"; };
-		7BE1ED672BBEB8F300B99EB4 /* DetailCategoryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailCategoryCell.xib; sourceTree = "<group>"; };
-		7BE1ED6A2BBEB90700B99EB4 /* DetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCell.swift; sourceTree = "<group>"; };
-		7BE1ED6B2BBEB90700B99EB4 /* DetailCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailCell.xib; sourceTree = "<group>"; };
-		7BE1ED6E2BBEBAE000B99EB4 /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
 		7BE1ED702BBECB7100B99EB4 /* VideoPlayerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerController.swift; sourceTree = "<group>"; };
 		7BE1ED742BBECE3F00B99EB4 /* AloeProduct.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = AloeProduct.mov; sourceTree = "<group>"; };
 		7BE1ED762BBEE29000B99EB4 /* AddController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddController.swift; sourceTree = "<group>"; };
@@ -119,7 +123,6 @@
 				7B6C31EF2BBBECED00F96260 /* AppDelegate.swift */,
 				7B6C31F12BBBECED00F96260 /* SceneDelegate.swift */,
 				7B6C320A2BBBEE8E00F96260 /* Controller */,
-				7B6C320B2BBBEE9C00F96260 /* Cell */,
 				7B6C31F52BBBECED00F96260 /* Main.storyboard */,
 				7B6C31F82BBBECF100F96260 /* Assets.xcassets */,
 				7B6C31FA2BBBECF100F96260 /* LaunchScreen.storyboard */,
@@ -131,102 +134,297 @@
 		7B6C320A2BBBEE8E00F96260 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				7BD04AC22BC00C15003AE3DB /* ImagePicker */,
+				7BD04AC12BC00C08003AE3DB /* VideoPlayer */,
+				7BD04AAA2BC0097A003AE3DB /* Description */,
+				7B8AF78C2BC0050B00F0B642 /* MyPlant */,
 				7BE1ED742BBECE3F00B99EB4 /* AloeProduct.mov */,
-				7B6C32032BBBEDA900F96260 /* MyPlantsController.swift */,
-				7BE1ED542BBE8EA700B99EB4 /* DescriptionController.swift */,
-				7BE1ED702BBECB7100B99EB4 /* VideoPlayerController.swift */,
-				7BE1ED762BBEE29000B99EB4 /* AddController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		7B6C320B2BBBEE9C00F96260 /* Cell */ = {
+		7B8AF78C2BC0050B00F0B642 /* MyPlant */ = {
 			isa = PBXGroup;
 			children = (
-				7BE1ED562BBEA49B00B99EB4 /* DescriptionCell */,
-				7BA32B932BBD49000039C855 /* MyPlantMainCell */,
-				7BA32B912BBD48D90039C855 /* Category */,
-				7BA32B942BBD49120039C855 /* Tutorial */,
+				7B8AF7902BC0052700F0B642 /* ViewModel */,
+				7B8AF78F2BC0052200F0B642 /* Model */,
+				7B8AF78D2BC0051300F0B642 /* View */,
+			);
+			path = MyPlant;
+			sourceTree = "<group>";
+		};
+		7B8AF78D2BC0051300F0B642 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7BD04AA32BC008A9003AE3DB /* Controller */,
+				7BD04AA22BC00894003AE3DB /* Cell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7B8AF78F2BC0052200F0B642 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7BD04AA42BC008D9003AE3DB /* PlantModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7B8AF7902BC0052700F0B642 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				7BD04A842BC00761003AE3DB /* MyPlantViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		7BD04AA22BC00894003AE3DB /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				7BD04AA92BC00953003AE3DB /* Tutorial */,
+				7BD04AA82BC00931003AE3DB /* Category */,
+				7BD04AA72BC00917003AE3DB /* Popular */,
+				7BD04AA62BC008FC003AE3DB /* Main */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
 		};
-		7BA32B912BBD48D90039C855 /* Category */ = {
+		7BD04AA32BC008A9003AE3DB /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				7B6C32182BBBFAFF00F96260 /* CategoryCell.swift */,
-				7BA32BA52BBD63660039C855 /* CategoryViewModel.swift */,
-				7B6C32192BBBFAFF00F96260 /* CategoryCell.xib */,
-				7BA32B952BBD494F0039C855 /* CategorySectionCell.swift */,
-				7BA32B962BBD494F0039C855 /* CategorySectionCell.xib */,
+				7B6C32032BBBEDA900F96260 /* MyPlantsController.swift */,
 			);
-			name = Category;
+			path = Controller;
 			sourceTree = "<group>";
 		};
-		7BA32B932BBD49000039C855 /* MyPlantMainCell */ = {
+		7BD04AA62BC008FC003AE3DB /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				7B6C32052BBBEE6E00F96260 /* MyPlantCell.swift */,
-				7B6C32062BBBEE6E00F96260 /* MyPlantCell.xib */,
-				7B6C32122BBBF1EC00F96260 /* PopularCell.swift */,
-				7BA32BAD2BBD7E4F0039C855 /* MyPlantViewModel.swift */,
-				7B6C32132BBBF1EC00F96260 /* PopularCell.xib */,
+				7BD04A802BC00761003AE3DB /* MyPlantCell.swift */,
+				7BD04A6E2BC0075F003AE3DB /* MyPlantCell.xib */,
 			);
-			name = MyPlantMainCell;
+			path = Main;
 			sourceTree = "<group>";
 		};
-		7BA32B942BBD49120039C855 /* Tutorial */ = {
+		7BD04AA72BC00917003AE3DB /* Popular */ = {
 			isa = PBXGroup;
 			children = (
-				7BA32B992BBD4DDD0039C855 /* TutorialsCell.swift */,
-				7BA32B9A2BBD4DDD0039C855 /* TutorialsCell.xib */,
-				7BA32BA72BBD75350039C855 /* TutorialSectionCell.swift */,
-				7BA32BA82BBD75350039C855 /* TutorialSectionCell.xib */,
-				7BA32BAB2BBD78350039C855 /* TutorialViewModel.swift */,
+				7BD04A7A2BC00760003AE3DB /* PopularCell.swift */,
+				7BD04A792BC00760003AE3DB /* PopularCell.xib */,
 			);
-			name = Tutorial;
+			path = Popular;
 			sourceTree = "<group>";
 		};
-		7BE1ED562BBEA49B00B99EB4 /* DescriptionCell */ = {
+		7BD04AA82BC00931003AE3DB /* Category */ = {
 			isa = PBXGroup;
 			children = (
-				7BE1ED652BBEB8E000B99EB4 /* DetailCategory */,
-				7BE1ED642BBEAC5F00B99EB4 /* Description */,
-				7BE1ED5F2BBEAC4800B99EB4 /* Wikipedia */,
+				7BD04AB22BC009F3003AE3DB /* View */,
+				7BD04AAF2BC009D6003AE3DB /* Model */,
+				7BD04AAE2BC009BF003AE3DB /* ViewModel */,
 			);
-			name = DescriptionCell;
+			path = Category;
 			sourceTree = "<group>";
 		};
-		7BE1ED5F2BBEAC4800B99EB4 /* Wikipedia */ = {
+		7BD04AA92BC00953003AE3DB /* Tutorial */ = {
 			isa = PBXGroup;
 			children = (
-				7BE1ED602BBEAC5A00B99EB4 /* WikipediaCell.swift */,
-				7BE1ED612BBEAC5A00B99EB4 /* WikipediaCell.xib */,
+				7BD04AB42BC00A24003AE3DB /* View */,
+				7BD04AB32BC00A19003AE3DB /* ViewModel */,
 			);
-			name = Wikipedia;
+			path = Tutorial;
 			sourceTree = "<group>";
 		};
-		7BE1ED642BBEAC5F00B99EB4 /* Description */ = {
+		7BD04AAA2BC0097A003AE3DB /* Description */ = {
 			isa = PBXGroup;
 			children = (
-				7BE1ED572BBEA4B600B99EB4 /* DescriptionCell.swift */,
-				7BE1ED582BBEA4B600B99EB4 /* DescriptionCell.xib */,
-				7BE1ED5B2BBEA8B100B99EB4 /* TypeCell.swift */,
-				7BE1ED5C2BBEA8B100B99EB4 /* TypeCell.xib */,
+				7BD04AAD2BC0098F003AE3DB /* ViewModel */,
+				7BD04AAC2BC0098B003AE3DB /* View */,
+				7BD04AAB2BC00985003AE3DB /* Model */,
 			);
-			name = Description;
+			path = Description;
 			sourceTree = "<group>";
 		};
-		7BE1ED652BBEB8E000B99EB4 /* DetailCategory */ = {
+		7BD04AAB2BC00985003AE3DB /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				7BE1ED6E2BBEBAE000B99EB4 /* DetailViewModel.swift */,
-				7BE1ED662BBEB8F300B99EB4 /* DetailCategoryCell.swift */,
-				7BE1ED672BBEB8F300B99EB4 /* DetailCategoryCell.xib */,
-				7BE1ED6A2BBEB90700B99EB4 /* DetailCell.swift */,
-				7BE1ED6B2BBEB90700B99EB4 /* DetailCell.xib */,
 			);
-			name = DetailCategory;
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7BD04AAC2BC0098B003AE3DB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7BD04AB52BC00A64003AE3DB /* Cell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7BD04AAD2BC0098F003AE3DB /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		7BD04AAE2BC009BF003AE3DB /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				7BD04A872BC00761003AE3DB /* CategoryViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		7BD04AAF2BC009D6003AE3DB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7BD04AB02BC009E6003AE3DB /* CategoryModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7BD04AB22BC009F3003AE3DB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7BD04A812BC00761003AE3DB /* CategoryCell.swift */,
+				7BD04A762BC00760003AE3DB /* CategorySectionCell.swift */,
+				7BD04A6F2BC0075F003AE3DB /* CategoryCell.xib */,
+				7BD04A702BC0075F003AE3DB /* CategorySectionCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7BD04AB32BC00A19003AE3DB /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				7BD04A732BC0075F003AE3DB /* TutorialViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		7BD04AB42BC00A24003AE3DB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7BD04A782BC00760003AE3DB /* TutorialsCell.swift */,
+				7BD04A7F2BC00760003AE3DB /* TutorialsCell.xib */,
+				7BD04A852BC00761003AE3DB /* TutorialSectionCell.swift */,
+				7BD04A7E2BC00760003AE3DB /* TutorialSectionCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7BD04AB52BC00A64003AE3DB /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				7BD04AB82BC00A7C003AE3DB /* Wikipedia */,
+				7BD04AB72BC00A75003AE3DB /* Detail */,
+				7BD04AB62BC00A6A003AE3DB /* Description */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		7BD04AB62BC00A6A003AE3DB /* Description */ = {
+			isa = PBXGroup;
+			children = (
+				7BD04ABB2BC00B57003AE3DB /* View */,
+			);
+			path = Description;
+			sourceTree = "<group>";
+		};
+		7BD04AB72BC00A75003AE3DB /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				7BD04ABA2BC00B18003AE3DB /* Model */,
+				7BD04AB92BC00B0C003AE3DB /* View */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		7BD04AB82BC00A7C003AE3DB /* Wikipedia */ = {
+			isa = PBXGroup;
+			children = (
+				7BD04ABF2BC00B99003AE3DB /* Cell */,
+			);
+			path = Wikipedia;
+			sourceTree = "<group>";
+		};
+		7BD04AB92BC00B0C003AE3DB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7BD04ABE2BC00B83003AE3DB /* Cell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7BD04ABA2BC00B18003AE3DB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7BD04A742BC00760003AE3DB /* DetailViewModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7BD04ABB2BC00B57003AE3DB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7BD04ABD2BC00B67003AE3DB /* Controller */,
+				7BD04ABC2BC00B5F003AE3DB /* Cell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7BD04ABC2BC00B5F003AE3DB /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				7BD04A712BC0075F003AE3DB /* DescriptionCell.xib */,
+				7BD04A7D2BC00760003AE3DB /* DescriptionCell.swift */,
+				7BD04A832BC00761003AE3DB /* TypeCell.swift */,
+				7BD04A822BC00761003AE3DB /* TypeCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		7BD04ABD2BC00B67003AE3DB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7BE1ED542BBE8EA700B99EB4 /* DescriptionController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		7BD04ABE2BC00B83003AE3DB /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				7BD04A722BC0075F003AE3DB /* DetailCategoryCell.swift */,
+				7BD04A772BC00760003AE3DB /* DetailCategoryCell.xib */,
+				7BD04A862BC00761003AE3DB /* DetailCell.swift */,
+				7BD04A752BC00760003AE3DB /* DetailCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		7BD04ABF2BC00B99003AE3DB /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				7BD04A7B2BC00760003AE3DB /* WikipediaCell.swift */,
+				7BD04A7C2BC00760003AE3DB /* WikipediaCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		7BD04AC12BC00C08003AE3DB /* VideoPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				7BE1ED702BBECB7100B99EB4 /* VideoPlayerController.swift */,
+			);
+			path = VideoPlayer;
+			sourceTree = "<group>";
+		};
+		7BD04AC22BC00C15003AE3DB /* ImagePicker */ = {
+			isa = PBXGroup;
+			children = (
+				7BE1ED762BBEE29000B99EB4 /* AddController.swift */,
+			);
+			path = ImagePicker;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -288,20 +486,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				7B6C31FC2BBBECF100F96260 /* LaunchScreen.storyboard in Resources */,
-				7BE1ED632BBEAC5A00B99EB4 /* WikipediaCell.xib in Resources */,
-				7BE1ED692BBEB8F400B99EB4 /* DetailCategoryCell.xib in Resources */,
-				7BA32B9C2BBD4DDD0039C855 /* TutorialsCell.xib in Resources */,
-				7BE1ED6D2BBEB90700B99EB4 /* DetailCell.xib in Resources */,
+				7BD04A8B2BC00761003AE3DB /* DescriptionCell.xib in Resources */,
+				7BD04A932BC00761003AE3DB /* PopularCell.xib in Resources */,
+				7BD04A992BC00761003AE3DB /* TutorialsCell.xib in Resources */,
+				7BD04A892BC00761003AE3DB /* CategoryCell.xib in Resources */,
+				7BD04A882BC00761003AE3DB /* MyPlantCell.xib in Resources */,
 				7BE1ED752BBECE3F00B99EB4 /* AloeProduct.mov in Resources */,
-				7BE1ED5E2BBEA8B100B99EB4 /* TypeCell.xib in Resources */,
-				7B6C321B2BBBFAFF00F96260 /* CategoryCell.xib in Resources */,
-				7B6C32082BBBEE6E00F96260 /* MyPlantCell.xib in Resources */,
-				7BA32B982BBD494F0039C855 /* CategorySectionCell.xib in Resources */,
-				7B6C32152BBBF1EC00F96260 /* PopularCell.xib in Resources */,
-				7BE1ED5A2BBEA4B600B99EB4 /* DescriptionCell.xib in Resources */,
+				7BD04A9C2BC00761003AE3DB /* TypeCell.xib in Resources */,
+				7BD04A962BC00761003AE3DB /* WikipediaCell.xib in Resources */,
+				7BD04A8F2BC00761003AE3DB /* DetailCell.xib in Resources */,
+				7BD04A982BC00761003AE3DB /* TutorialSectionCell.xib in Resources */,
+				7BD04A912BC00761003AE3DB /* DetailCategoryCell.xib in Resources */,
 				7B6C31F92BBBECF100F96260 /* Assets.xcassets in Resources */,
 				7B6C31F72BBBECED00F96260 /* Main.storyboard in Resources */,
-				7BA32BAA2BBD75350039C855 /* TutorialSectionCell.xib in Resources */,
+				7BD04A8A2BC00761003AE3DB /* CategorySectionCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -312,27 +510,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7BA32BAC2BBD78350039C855 /* TutorialViewModel.swift in Sources */,
-				7BE1ED5D2BBEA8B100B99EB4 /* TypeCell.swift in Sources */,
-				7BE1ED6C2BBEB90700B99EB4 /* DetailCell.swift in Sources */,
+				7BD04A9A2BC00761003AE3DB /* MyPlantCell.swift in Sources */,
+				7BD04A9B2BC00761003AE3DB /* CategoryCell.swift in Sources */,
+				7BD04AA02BC00761003AE3DB /* DetailCell.swift in Sources */,
 				7B6C31F02BBBECED00F96260 /* AppDelegate.swift in Sources */,
-				7B6C32072BBBEE6E00F96260 /* MyPlantCell.swift in Sources */,
+				7BD04A902BC00761003AE3DB /* CategorySectionCell.swift in Sources */,
+				7BD04AA52BC008D9003AE3DB /* PlantModel.swift in Sources */,
+				7BD04AB12BC009E6003AE3DB /* CategoryModel.swift in Sources */,
+				7BD04A942BC00761003AE3DB /* PopularCell.swift in Sources */,
+				7BD04A8D2BC00761003AE3DB /* TutorialViewModel.swift in Sources */,
 				7B6C32042BBBEDA900F96260 /* MyPlantsController.swift in Sources */,
-				7BE1ED622BBEAC5A00B99EB4 /* WikipediaCell.swift in Sources */,
-				7BE1ED6F2BBEBAE000B99EB4 /* DetailViewModel.swift in Sources */,
+				7BD04A9D2BC00761003AE3DB /* TypeCell.swift in Sources */,
+				7BD04A8E2BC00761003AE3DB /* DetailViewModel.swift in Sources */,
+				7BD04AA12BC00761003AE3DB /* CategoryViewModel.swift in Sources */,
 				7BE1ED552BBE8EA700B99EB4 /* DescriptionController.swift in Sources */,
-				7BA32BA62BBD63660039C855 /* CategoryViewModel.swift in Sources */,
-				7B6C32142BBBF1EC00F96260 /* PopularCell.swift in Sources */,
-				7BA32BAE2BBD7E4F0039C855 /* MyPlantViewModel.swift in Sources */,
+				7BD04A9F2BC00761003AE3DB /* TutorialSectionCell.swift in Sources */,
+				7BD04A922BC00761003AE3DB /* TutorialsCell.swift in Sources */,
+				7BD04A8C2BC00761003AE3DB /* DetailCategoryCell.swift in Sources */,
 				7BE1ED772BBEE29000B99EB4 /* AddController.swift in Sources */,
-				7BE1ED592BBEA4B600B99EB4 /* DescriptionCell.swift in Sources */,
-				7BA32BA92BBD75350039C855 /* TutorialSectionCell.swift in Sources */,
 				7BE1ED712BBECB7100B99EB4 /* VideoPlayerController.swift in Sources */,
 				7B6C31F22BBBECED00F96260 /* SceneDelegate.swift in Sources */,
-				7BE1ED682BBEB8F400B99EB4 /* DetailCategoryCell.swift in Sources */,
-				7BA32B9B2BBD4DDD0039C855 /* TutorialsCell.swift in Sources */,
-				7B6C321A2BBBFAFF00F96260 /* CategoryCell.swift in Sources */,
-				7BA32B972BBD494F0039C855 /* CategorySectionCell.swift in Sources */,
+				7BD04A9E2BC00761003AE3DB /* MyPlantViewModel.swift in Sources */,
+				7BD04A972BC00761003AE3DB /* DescriptionCell.swift in Sources */,
+				7BD04A952BC00761003AE3DB /* WikipediaCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

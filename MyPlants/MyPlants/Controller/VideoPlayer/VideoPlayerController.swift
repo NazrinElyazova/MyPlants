@@ -10,23 +10,20 @@ import AVKit
 import AVFoundation
 
 class VideoPlayerController: UIViewController {
-
+    
+    @IBOutlet weak var videoImage: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-
+        videoImage.clipsToBounds = true
+        videoImage.layer.cornerRadius = 20
     }
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
+
+    @IBAction func playActionButton(_ sender: Any) {
         
         let player = AVPlayer(url: URL(fileURLWithPath: Bundle.main.path(forResource: "AloeProduct", ofType: "mov")!))
-        
-        let layer = AVPlayerLayer(player: player)
-        layer.frame = view.bounds
-        layer.videoGravity = .resizeAspect
-        view.layer.addSublayer(layer)
-        
-        player.play()
+        let vc = AVPlayerViewController()
+        vc.player = player
+        present(vc, animated: true)
     }
-    
 }

@@ -13,5 +13,4 @@ class WikipediaCell: UICollectionViewCell {
         super.awakeFromNib()
         // Initialization code
     }
-
 }

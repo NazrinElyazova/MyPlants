@@ -33,7 +33,6 @@ class MyPlantCell: UICollectionViewCell {
 extension MyPlantCell: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        print(item.model.count)
         return item.model.count
     }
     

@@ -8,14 +8,6 @@
 import Foundation
 import UIKit
 
-
-struct PlantModel {
-    var plantImage: UIImage
-    var fits: String
-    var name: String
-}
-
-
 class MyPlantViewModel {
     var model = [PlantModel(plantImage: UIImage(named: "aloe1")!,
                             fits: "Fits well",

@@ -10,12 +10,6 @@ import UIKit
 
 class CategoryViewModel {
     
-    struct CategoryModel {
-        var image: UIImage
-        var plant: String
-        var room: String
-    }
-    
     var model = [CategoryModel(image: UIImage(named: "green")!, plant: "2 Plants", room: "Living room"),
     CategoryModel(image: UIImage(named: "yellow")!, plant: "2 Plants", room: "Drawing room"),
     CategoryModel(image: UIImage(named: "purple")!, plant: "1 Plant", room: "Kitchen"),

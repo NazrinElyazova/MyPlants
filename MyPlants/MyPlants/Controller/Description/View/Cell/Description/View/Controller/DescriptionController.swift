@@ -8,7 +8,7 @@
 import UIKit
 
 class DescriptionController: UIViewController {
-
+    
     var flower: MyPlantViewModel?
     
     @IBOutlet weak var flowerPicture: UIImageView!
@@ -16,7 +16,7 @@ class DescriptionController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         collection.delegate = self
         collection.dataSource = self
         
@@ -26,15 +26,15 @@ class DescriptionController: UIViewController {
         
         collection.register(UINib(nibName: "\(DetailCategoryCell.self)", bundle: nil), forCellWithReuseIdentifier: "\(DetailCategoryCell.self)")
         
-
         collection.layer.cornerRadius = 35
     }
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
         if let firstPlant = flower?.model.first {
-               flowerPicture.image = firstPlant.plantImage
-           }
+            flowerPicture.image = firstPlant.plantImage
+        }
     }
 }
 
@@ -48,28 +48,28 @@ extension DescriptionController: UICollectionViewDelegate, UICollectionViewDataS
         
         switch indexPath.item {
         case 0:
-
+            
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "\(DescriptionCell.self)", for: indexPath) as! DescriptionCell
             return cell
-
+            
         case 1:
-          let  cell = collectionView.dequeueReusableCell(withReuseIdentifier: "\(WikipediaCell.self)", for: indexPath) as! WikipediaCell
+            let  cell = collectionView.dequeueReusableCell(withReuseIdentifier: "\(WikipediaCell.self)", for: indexPath) as! WikipediaCell
             return cell
-//
+            
         case 2:
-         let   cell = collectionView.dequeueReusableCell(withReuseIdentifier: "\(DetailCategoryCell.self)", for: indexPath) as! DetailCategoryCell
+            let   cell = collectionView.dequeueReusableCell(withReuseIdentifier: "\(DetailCategoryCell.self)", for: indexPath) as! DetailCategoryCell
             
             return cell
-
+            
         default:
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "\(DescriptionCell.self)", for: indexPath) as! DescriptionCell
             return cell
         }
-
+        
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-
+        
         switch indexPath.item {
         case 0:
                 .init(width: collectionView.frame.width, height: 138)
@@ -77,7 +77,7 @@ extension DescriptionController: UICollectionViewDelegate, UICollectionViewDataS
                 .init(width: collectionView.frame.width, height: 210)
         case 2:
                 .init(width: collectionView.frame.width, height: 196)
-
+            
         default:
                 .init(width: collectionView.frame.width, height: 90)
         }

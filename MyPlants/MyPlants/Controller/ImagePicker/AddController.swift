@@ -17,9 +17,8 @@ class AddController: UIViewController {
     }
     
     @IBAction func addButton(_ sender: Any) {
-        let controller = storyboard?.instantiateViewController(withIdentifier: "\(MyPlantsController.self)") as! MyPlantsController
-        
-        navigationController?.show(controller, sender: nil)
+       
+        navigationController?.popViewController(animated: true)
     }
     
     @IBAction func addToGalleryButton(_ sender: Any) {
@@ -41,7 +40,6 @@ extension AddController: UIImagePickerControllerDelegate, UINavigationController
         if let image = info[UIImagePickerController.InfoKey(rawValue: "UIImagePickerControllerEditedImage")] {
             galleryImage.image = image as? UIImage
             plusButtonOutlet.isHidden = true
-
         }
     }
     
