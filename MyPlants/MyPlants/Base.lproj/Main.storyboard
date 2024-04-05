@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="n2c-gV-EQG">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--My Plants Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="MyPlantsController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="MyPlantsController" customModule="MyPlants" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Plants" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PKJ-wZ-xSY">
+                                <rect key="frame" x="20" y="103" width="140.66666666666666" height="36"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="8vW-tI-qOe">
+                                <rect key="frame" x="0.0" y="139" width="393" height="679"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="f3N-V5-EWi">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="Ix4-9i-reV"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="NRi-a8-G8P"/>
+                                </connections>
+                            </collectionView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kCP-Fk-eVT">
+                                <rect key="frame" x="320.66666666666669" y="103" width="52.333333333333314" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="HjB-G6-JDd"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <imageReference key="image" image="plus.app" catalog="system" renderingMode="original"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="addButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Bqt-8h-EOP"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kCP-Fk-eVT" secondAttribute="trailing" constant="20" id="0R9-dJ-35B"/>
+                            <constraint firstItem="8vW-tI-qOe" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Vxx-Hn-4bd"/>
+                            <constraint firstItem="kCP-Fk-eVT" firstAttribute="leading" secondItem="PKJ-wZ-xSY" secondAttribute="trailing" constant="160" id="cZ0-xB-cpQ"/>
+                            <constraint firstItem="8vW-tI-qOe" firstAttribute="top" secondItem="PKJ-wZ-xSY" secondAttribute="bottom" id="ccz-2X-d58"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8vW-tI-qOe" secondAttribute="trailing" id="fkT-Hz-zVl"/>
+                            <constraint firstItem="PKJ-wZ-xSY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="oYB-Sz-bRW"/>
+                            <constraint firstItem="8vW-tI-qOe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="vO5-N1-eRa"/>
+                            <constraint firstItem="PKJ-wZ-xSY" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="vY8-PO-k3A"/>
+                            <constraint firstItem="kCP-Fk-eVT" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="xyx-oG-Joc"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="3tC-pu-3Sd"/>
+                    <connections>
+                        <outlet property="collection" destination="8vW-tI-qOe" id="7CP-KR-CzY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="976.33587786259534" y="3.5211267605633805"/>
+        </scene>
+        <!--Description Controller-->
+        <scene sceneID="Dba-3x-s3T">
+            <objects>
+                <viewController storyboardIdentifier="DescriptionController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="drY-x0-1EU" customClass="DescriptionController" customModule="MyPlants" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GEh-zG-Uw8">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="flower" translatesAutoresizingMaskIntoConstraints="NO" id="JOr-Sf-pHE">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="260"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="260" id="8fW-En-rA1"/>
+                                </constraints>
+                            </imageView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="QxT-V7-UAZ">
+                                <rect key="frame" x="0.0" y="220" width="393" height="632"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="gNi-cr-xGi">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                                <connections>
+                                    <outlet property="dataSource" destination="drY-x0-1EU" id="rnx-tF-35y"/>
+                                    <outlet property="delegate" destination="drY-x0-1EU" id="2yC-D2-hlE"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="WI2-xn-ZiH"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="QxT-V7-UAZ" secondAttribute="bottom" id="6hZ-KT-Tdc"/>
+                            <constraint firstItem="QxT-V7-UAZ" firstAttribute="top" secondItem="JOr-Sf-pHE" secondAttribute="bottom" constant="-40" id="CJk-vb-yuu"/>
+                            <constraint firstItem="JOr-Sf-pHE" firstAttribute="leading" secondItem="WI2-xn-ZiH" secondAttribute="leading" id="Js5-J3-VdD"/>
+                            <constraint firstItem="WI2-xn-ZiH" firstAttribute="trailing" secondItem="JOr-Sf-pHE" secondAttribute="trailing" id="KlH-PV-3TS"/>
+                            <constraint firstItem="QxT-V7-UAZ" firstAttribute="leading" secondItem="WI2-xn-ZiH" secondAttribute="leading" id="RjZ-03-ujF"/>
+                            <constraint firstItem="JOr-Sf-pHE" firstAttribute="top" secondItem="GEh-zG-Uw8" secondAttribute="top" id="nRr-ax-KHt"/>
+                            <constraint firstItem="QxT-V7-UAZ" firstAttribute="trailing" secondItem="WI2-xn-ZiH" secondAttribute="trailing" id="ns6-ZP-ejz"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="collection" destination="QxT-V7-UAZ" id="ZZr-zh-YT2"/>
+                        <outlet property="flowerPicture" destination="JOr-Sf-pHE" id="QUC-n7-bYa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7hG-az-xqh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1700" y="9.8591549295774659"/>
+        </scene>
+        <!--Video Player Controller-->
+        <scene sceneID="7o9-PW-QYD">
+            <objects>
+                <viewController storyboardIdentifier="VideoPlayerController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="8fV-te-SiL" customClass="VideoPlayerController" customModule="MyPlants" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Wmh-Gb-eJt">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The all-new Creme 21 Aloe Vera Gel." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CaK-03-AXM">
+                                <rect key="frame" x="20" y="617.66666666666663" width="353" height="50.333333333333371"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="lsJ-ut-O83"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="CaK-03-AXM" firstAttribute="leading" secondItem="lsJ-ut-O83" secondAttribute="leading" constant="20" id="0JS-KB-dGX"/>
+                            <constraint firstItem="lsJ-ut-O83" firstAttribute="trailing" secondItem="CaK-03-AXM" secondAttribute="trailing" constant="20" id="W7m-j7-hY9"/>
+                            <constraint firstItem="lsJ-ut-O83" firstAttribute="bottom" secondItem="CaK-03-AXM" secondAttribute="bottom" constant="150" id="rAm-VF-2OM"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="s4G-ho-wU3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2396.1832061068703" y="17.605633802816904"/>
+        </scene>
+        <!--Add Controller-->
+        <scene sceneID="sih-fs-dKa">
+            <objects>
+                <viewController storyboardIdentifier="AddController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BS4-Xl-zfX" customClass="AddController" customModule="MyPlants" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3ZS-ol-hM4">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z9R-CL-kfx">
+                                <rect key="frame" x="20" y="701.33333333333337" width="353" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="oei-SQ-lmX"/>
+                                </constraints>
+                                <color key="tintColor" red="0.3803921569" green="0.68627450980000004" blue="0.16862745100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Add">
+                                    <fontDescription key="titleFontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="23"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="addButton:" destination="BS4-Xl-zfX" eventType="touchUpInside" id="ZAQ-45-SnM"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="le9-TK-rkS">
+                                <rect key="frame" x="20" y="184.33333333333337" width="353" height="397"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="JzW-t1-Bh7">
+                                        <rect key="frame" x="8" y="8" width="337" height="381"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="evT-YO-0u5">
+                                        <rect key="frame" x="122" y="157.99999999999997" width="109" height="109.00000000000003"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="109" id="bwz-H1-B05"/>
+                                            <constraint firstAttribute="height" constant="109" id="uaT-Gd-wfX"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" backgroundImage="plusBUT"/>
+                                        <connections>
+                                            <action selector="addToGalleryButton:" destination="BS4-Xl-zfX" eventType="touchUpInside" id="78P-yc-lGZ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                <constraints>
+                                    <constraint firstItem="evT-YO-0u5" firstAttribute="leading" secondItem="le9-TK-rkS" secondAttribute="leading" constant="122" id="8hQ-rj-L6B"/>
+                                    <constraint firstAttribute="bottom" secondItem="JzW-t1-Bh7" secondAttribute="bottom" constant="8" id="HZX-Tw-6mc"/>
+                                    <constraint firstAttribute="trailing" secondItem="evT-YO-0u5" secondAttribute="trailing" constant="122" id="T9z-Jq-tJF"/>
+                                    <constraint firstAttribute="bottom" secondItem="evT-YO-0u5" secondAttribute="bottom" constant="130" id="W1M-se-ibZ"/>
+                                    <constraint firstAttribute="trailing" secondItem="JzW-t1-Bh7" secondAttribute="trailing" constant="8" id="gGe-gI-kei"/>
+                                    <constraint firstItem="JzW-t1-Bh7" firstAttribute="top" secondItem="le9-TK-rkS" secondAttribute="top" constant="8" id="htP-Mp-9dS"/>
+                                    <constraint firstItem="JzW-t1-Bh7" firstAttribute="leading" secondItem="le9-TK-rkS" secondAttribute="leading" constant="8" id="wTp-Oz-Si2"/>
+                                    <constraint firstItem="evT-YO-0u5" firstAttribute="top" secondItem="le9-TK-rkS" secondAttribute="top" constant="158" id="zWk-45-LRZ"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You can also add your own plants to the MY PLANT App for others to see" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Lc-zr-fjE">
+                                <rect key="frame" x="20" y="99" width="353" height="45.333333333333343"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="2mn-8w-Xiv"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="le9-TK-rkS" firstAttribute="top" secondItem="6Lc-zr-fjE" secondAttribute="bottom" constant="40" id="FC3-qO-rfC"/>
+                            <constraint firstItem="2mn-8w-Xiv" firstAttribute="trailing" secondItem="z9R-CL-kfx" secondAttribute="trailing" constant="20" id="QkW-q4-Won"/>
+                            <constraint firstItem="z9R-CL-kfx" firstAttribute="leading" secondItem="2mn-8w-Xiv" secondAttribute="leading" constant="20" id="ZFc-Ac-Q1Q"/>
+                            <constraint firstItem="2mn-8w-Xiv" firstAttribute="trailing" secondItem="le9-TK-rkS" secondAttribute="trailing" constant="20" id="Zzi-dY-Nk4"/>
+                            <constraint firstItem="6Lc-zr-fjE" firstAttribute="leading" secondItem="2mn-8w-Xiv" secondAttribute="leading" constant="20" id="fCe-lE-Ck6"/>
+                            <constraint firstItem="z9R-CL-kfx" firstAttribute="top" secondItem="le9-TK-rkS" secondAttribute="bottom" constant="120" id="iAV-0o-MJI"/>
+                            <constraint firstItem="le9-TK-rkS" firstAttribute="leading" secondItem="2mn-8w-Xiv" secondAttribute="leading" constant="20" id="niT-rk-u0K"/>
+                            <constraint firstItem="2mn-8w-Xiv" firstAttribute="trailing" secondItem="6Lc-zr-fjE" secondAttribute="trailing" constant="20" id="sbl-En-zA4"/>
+                            <constraint firstItem="6Lc-zr-fjE" firstAttribute="top" secondItem="2mn-8w-Xiv" secondAttribute="top" constant="40" id="u2M-9N-l5v"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="galleryImage" destination="JzW-t1-Bh7" id="W02-6H-hzQ"/>
+                        <outlet property="plusButtonOutlet" destination="evT-YO-0u5" id="8Xb-NE-mAb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CRa-IM-WcB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3124.4274809160306" y="17.605633802816904"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="JUO-bC-7DW">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="n2c-gV-EQG" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ym4-1e-BdN">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="oyR-JK-Egu"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jdH-Kd-z0Z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="49.618320610687022" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="flower" width="828" height="552"/>
+        <image name="plus.app" catalog="system" width="128" height="114"/>
+        <image name="plusBUT" width="800" height="800"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
