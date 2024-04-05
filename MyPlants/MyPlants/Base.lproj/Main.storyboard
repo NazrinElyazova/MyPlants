@@ -141,51 +141,27 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="advertisement" translatesAutoresizingMaskIntoConstraints="NO" id="yi3-x4-3CY">
-                                <rect key="frame" x="20" y="199" width="353" height="340"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <integer key="value" value="20"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q1Y-ad-Fu8">
-                                <rect key="frame" x="150" y="370" width="93" height="34.333333333333314"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Play">
-                                    <fontDescription key="titleFontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
-                                    <color key="baseBackgroundColor" red="0.3803921569" green="0.68627450980000004" blue="0.16862745100000001" alpha="1" colorSpace="calibratedRGB"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="playActionButton:" destination="8fV-te-SiL" eventType="touchUpInside" id="Bxl-3H-NZI"/>
-                                </connections>
-                            </button>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mtQ-hc-w33">
-                                <rect key="frame" x="20" y="465" width="353" height="128"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mtQ-hc-w33" customClass="CustomView" customModule="MyPlants" customModuleProvider="target">
+                                <rect key="frame" x="20" y="533" width="353" height="60"/>
                                 <color key="backgroundColor" systemColor="systemTealColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="bJh-Kl-H9t"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="lsJ-ut-O83"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="CaK-03-AXM" firstAttribute="leading" secondItem="lsJ-ut-O83" secondAttribute="leading" constant="20" id="0JS-KB-dGX"/>
-                            <constraint firstItem="mtQ-hc-w33" firstAttribute="top" secondItem="Q1Y-ad-Fu8" secondAttribute="bottom" constant="60.670000000000002" id="25V-v7-rnv"/>
-                            <constraint firstItem="lsJ-ut-O83" firstAttribute="trailing" secondItem="Q1Y-ad-Fu8" secondAttribute="trailing" constant="150" id="4ru-1J-aHA"/>
                             <constraint firstItem="lsJ-ut-O83" firstAttribute="trailing" secondItem="mtQ-hc-w33" secondAttribute="trailing" constant="20" id="A1h-SF-yTm"/>
-                            <constraint firstItem="lsJ-ut-O83" firstAttribute="trailing" secondItem="yi3-x4-3CY" secondAttribute="trailing" constant="20" id="Vrq-D0-L6g"/>
                             <constraint firstItem="lsJ-ut-O83" firstAttribute="trailing" secondItem="CaK-03-AXM" secondAttribute="trailing" constant="20" id="W7m-j7-hY9"/>
-                            <constraint firstItem="Q1Y-ad-Fu8" firstAttribute="top" secondItem="Wmh-Gb-eJt" secondAttribute="top" constant="370" id="aC2-c0-arC"/>
-                            <constraint firstItem="yi3-x4-3CY" firstAttribute="top" secondItem="lsJ-ut-O83" secondAttribute="top" constant="140" id="crE-SH-jSk"/>
                             <constraint firstItem="mtQ-hc-w33" firstAttribute="leading" secondItem="lsJ-ut-O83" secondAttribute="leading" constant="20" id="ep7-HD-87I"/>
-                            <constraint firstItem="Q1Y-ad-Fu8" firstAttribute="leading" secondItem="lsJ-ut-O83" secondAttribute="leading" constant="150" id="i0h-ap-i6Y"/>
                             <constraint firstItem="CaK-03-AXM" firstAttribute="top" secondItem="mtQ-hc-w33" secondAttribute="bottom" constant="24.666666666666515" id="lYv-QN-1Nk"/>
-                            <constraint firstItem="mtQ-hc-w33" firstAttribute="top" secondItem="Wmh-Gb-eJt" secondAttribute="top" constant="465" id="oAe-fU-52A"/>
                             <constraint firstItem="lsJ-ut-O83" firstAttribute="bottom" secondItem="CaK-03-AXM" secondAttribute="bottom" constant="150" id="rAm-VF-2OM"/>
-                            <constraint firstItem="yi3-x4-3CY" firstAttribute="leading" secondItem="lsJ-ut-O83" secondAttribute="leading" constant="20" id="zE0-eI-eqg"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="videoImage" destination="yi3-x4-3CY" id="FT1-Pq-u98"/>
+                        <outlet property="customView" destination="mtQ-hc-w33" id="hIL-Or-Zry"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="s4G-ho-wU3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -299,7 +275,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="advertisement" width="690" height="340"/>
         <image name="flower" width="828" height="552"/>
         <image name="plus" width="640" height="638"/>
         <image name="plus.app" catalog="system" width="128" height="114"/>
@@ -307,10 +282,10 @@
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemGray6Color">
-            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemTealColor">
-            <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.18823529410000001" green="0.69019607839999997" blue="0.78039215689999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
