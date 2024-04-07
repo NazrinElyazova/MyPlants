@@ -12,25 +12,27 @@ import AVFoundation
 class VideoPlayerController: UIViewController {
     
     var player: AVPlayer?
-    var progress: Progress?
-    
     @IBOutlet weak var video: UIView!
     @IBOutlet weak var videoView: UIView!
     @IBOutlet weak var customView: CustomView! {
         didSet {
             customView.delegate = self
+            
         }
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-    }
-    
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
+        
         playTheVideo()
     }
+  
     
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        player?.pause()
+        
+    }
     func playTheVideo() {
         player = AVPlayer(url: URL(fileURLWithPath: Bundle.main.path(forResource: "AloeProduct", ofType: "mov")!))
         let layer = AVPlayerLayer(player: player)
@@ -38,6 +40,9 @@ class VideoPlayerController: UIViewController {
         layer.videoGravity = .resizeAspectFill
         videoView.layer.addSublayer(layer)
         player?.play()
+        
+        
+        customView.setupPlayer(player: player!)
     }
 }
 

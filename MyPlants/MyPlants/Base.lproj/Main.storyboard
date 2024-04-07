@@ -142,29 +142,29 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zus-QM-DgN">
-                                <rect key="frame" x="20" y="334.33333333333331" width="353" height="183.33333333333331"/>
+                                <rect key="frame" x="20" y="254.33333333333334" width="353" height="343.33333333333326"/>
                                 <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rmT-TC-5DJ">
+                                        <rect key="frame" x="0.0" y="0.0" width="353" height="305.33333333333331"/>
+                                        <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                                    </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mtQ-hc-w33" customClass="CustomView" customModule="MyPlants" customModuleProvider="target">
-                                        <rect key="frame" x="20" y="143.33333333333337" width="313" height="40"/>
+                                        <rect key="frame" x="20" y="313.33333333333326" width="313" height="30"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="40" id="bJh-Kl-H9t"/>
+                                            <constraint firstAttribute="height" constant="30" id="Zz9-2l-2IZ"/>
                                         </constraints>
-                                    </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rmT-TC-5DJ">
-                                        <rect key="frame" x="0.0" y="0.0" width="353" height="128"/>
-                                        <color key="backgroundColor" systemColor="systemPurpleColor"/>
                                     </view>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="rmT-TC-5DJ" firstAttribute="top" secondItem="zus-QM-DgN" secondAttribute="top" id="30m-Np-cA5"/>
-                                    <constraint firstAttribute="bottom" secondItem="mtQ-hc-w33" secondAttribute="bottom" id="D6P-Cx-1DC"/>
-                                    <constraint firstAttribute="trailing" secondItem="mtQ-hc-w33" secondAttribute="trailing" constant="20" id="FkE-Dy-jHK"/>
-                                    <constraint firstAttribute="bottom" secondItem="rmT-TC-5DJ" secondAttribute="bottom" constant="55.333333333333314" id="K6n-q9-p9Q"/>
                                     <constraint firstAttribute="trailing" secondItem="rmT-TC-5DJ" secondAttribute="trailing" id="KrT-Ag-bnl"/>
+                                    <constraint firstAttribute="trailing" secondItem="mtQ-hc-w33" secondAttribute="trailing" constant="20" id="LTf-Xk-sx9"/>
+                                    <constraint firstItem="mtQ-hc-w33" firstAttribute="leading" secondItem="zus-QM-DgN" secondAttribute="leading" constant="20" id="TnA-Zs-cIm"/>
                                     <constraint firstItem="rmT-TC-5DJ" firstAttribute="leading" secondItem="zus-QM-DgN" secondAttribute="leading" id="Wez-bS-6x1"/>
-                                    <constraint firstItem="mtQ-hc-w33" firstAttribute="leading" secondItem="zus-QM-DgN" secondAttribute="leading" constant="20" id="dMo-he-nLo"/>
+                                    <constraint firstAttribute="bottom" secondItem="mtQ-hc-w33" secondAttribute="bottom" id="ZhA-aI-VPg"/>
+                                    <constraint firstItem="mtQ-hc-w33" firstAttribute="top" secondItem="rmT-TC-5DJ" secondAttribute="bottom" constant="8" id="ec2-UZ-RZU"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -176,7 +176,7 @@
                             <constraint firstItem="lsJ-ut-O83" firstAttribute="trailing" secondItem="CaK-03-AXM" secondAttribute="trailing" constant="20" id="W7m-j7-hY9"/>
                             <constraint firstItem="zus-QM-DgN" firstAttribute="leading" secondItem="lsJ-ut-O83" secondAttribute="leading" constant="20" id="afp-dW-Veh"/>
                             <constraint firstItem="lsJ-ut-O83" firstAttribute="trailing" secondItem="zus-QM-DgN" secondAttribute="trailing" constant="20" id="gbC-kR-AvS"/>
-                            <constraint firstItem="CaK-03-AXM" firstAttribute="top" secondItem="zus-QM-DgN" secondAttribute="bottom" constant="100" id="oEG-Yt-36f"/>
+                            <constraint firstItem="CaK-03-AXM" firstAttribute="top" secondItem="zus-QM-DgN" secondAttribute="bottom" constant="20" id="oEG-Yt-36f"/>
                             <constraint firstItem="lsJ-ut-O83" firstAttribute="bottom" secondItem="CaK-03-AXM" secondAttribute="bottom" constant="150" id="rAm-VF-2OM"/>
                         </constraints>
                     </view>
