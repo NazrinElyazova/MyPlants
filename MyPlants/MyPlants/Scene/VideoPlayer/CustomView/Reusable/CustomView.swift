@@ -12,6 +12,7 @@ protocol TimeDelegate {
     func setVideoTime(result: Float)
     func gobackVideo(seconds: Double)
     func goForwardVideo(seconds: Double)
+    
 }
 
 final class CustomView: UIView {
@@ -20,6 +21,7 @@ final class CustomView: UIView {
     var player: AVPlayer?
     var timeObserverToken: Any?
     
+    @IBOutlet weak var playButtn: UIButton!
     @IBOutlet weak var slider: UISlider!
     
     override init(frame: CGRect) {
@@ -32,11 +34,16 @@ final class CustomView: UIView {
     }
     
     @IBAction func playAndPauseButtonAction(_ sender: Any) {
+
         if let player = player {
             if player.rate == 0 {
+                playButtn.setImage(UIImage(named: "pause"), for: .normal)
                 player.play()
             } else {
+                playButtn.setImage(UIImage(named: "ply"), for: .normal)
+
                 player.pause()
+                
             }
         }
     }

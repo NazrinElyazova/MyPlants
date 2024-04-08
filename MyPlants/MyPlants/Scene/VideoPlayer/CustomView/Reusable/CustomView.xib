@@ -11,6 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CustomView" customModule="MyPlants" customModuleProvider="target">
             <connections>
+                <outlet property="playButtn" destination="qjr-sA-IHf" id="91S-2j-C4q"/>
                 <outlet property="slider" destination="PBN-fC-ZBI" id="em5-gi-2Ic"/>
             </connections>
         </placeholder>
@@ -20,7 +21,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="PBN-fC-ZBI">
-                    <rect key="frame" x="66" y="4" width="525" height="34"/>
+                    <rect key="frame" x="68" y="4" width="523" height="34"/>
                     <color key="minimumTrackTintColor" systemColor="systemRedColor"/>
                     <color key="maximumTrackTintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <color key="thumbTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -34,18 +35,16 @@
                         <constraint firstAttribute="width" constant="36" id="sGw-dR-QVQ"/>
                         <constraint firstAttribute="height" constant="33" id="zIz-Rx-Sim"/>
                     </constraints>
-                    <state key="normal" title="Button"/>
-                    <buttonConfiguration key="configuration" style="plain">
-                        <backgroundConfiguration key="background" image="ply"/>
-                    </buttonConfiguration>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" image="pause"/>
                     <connections>
                         <action selector="playAndPauseButtonAction:" destination="-1" eventType="touchUpInside" id="FjN-1Z-Gig"/>
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GYq-Z6-EB7">
-                    <rect key="frame" x="38" y="3" width="28" height="35"/>
+                    <rect key="frame" x="38" y="3" width="30" height="35"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="28" id="UCN-Id-cp9"/>
+                        <constraint firstAttribute="width" constant="30" id="UCN-Id-cp9"/>
                     </constraints>
                     <state key="normal" title="Button"/>
                     <buttonConfiguration key="configuration" style="plain">
@@ -64,10 +63,10 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yau-0O-ipB">
-                    <rect key="frame" x="591" y="3" width="28" height="35"/>
+                    <rect key="frame" x="589" y="3" width="30" height="35"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="35" id="EpY-Mj-9R6"/>
-                        <constraint firstAttribute="width" constant="28" id="VP5-KS-Xqi"/>
+                        <constraint firstAttribute="width" constant="30" id="VP5-KS-Xqi"/>
                     </constraints>
                     <state key="normal" title="Button"/>
                     <buttonConfiguration key="configuration" style="plain">
@@ -100,7 +99,6 @@
                 <constraint firstItem="PBN-fC-ZBI" firstAttribute="leading" secondItem="GYq-Z6-EB7" secondAttribute="trailing" constant="2" id="mCp-zy-ABO"/>
                 <constraint firstItem="Yau-0O-ipB" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="mVO-Ym-jRB"/>
                 <constraint firstItem="qjr-sA-IHf" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="rzV-cX-3m2"/>
-                <constraint firstItem="qjr-sA-IHf" firstAttribute="height" secondItem="PBN-fC-ZBI" secondAttribute="height" id="wr3-x8-0fk"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <point key="canvasLocation" x="203.81679389312976" y="331.69014084507046"/>
@@ -109,7 +107,7 @@
     <resources>
         <image name="gobackward.5" catalog="system" width="119" height="128"/>
         <image name="goforward.5" catalog="system" width="119" height="128"/>
-        <image name="ply" width="512" height="512"/>
+        <image name="pause" width="512" height="512"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

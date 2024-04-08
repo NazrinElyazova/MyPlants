@@ -24,8 +24,6 @@ class VideoPlayerController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         playTheVideo()
-        videoView.layer.cornerRadius = 20
-        videoView.clipsToBounds = true
     }
     
     override func viewDidDisappear(_ animated: Bool) {

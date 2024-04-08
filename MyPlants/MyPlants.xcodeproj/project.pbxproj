@@ -107,6 +107,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7B2000122BC3DA7E006B0A1E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7BE1ED702BBECB7100B99EB4 /* VideoPlayerController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7B2000132BC3E095006B0A1E /* Reusable */ = {
+			isa = PBXGroup;
+			children = (
+				7BD04AC42BC00EB7003AE3DB /* CustomView.xib */,
+				7BD04ACA2BC01C91003AE3DB /* CustomView.swift */,
+			);
+			path = Reusable;
+			sourceTree = "<group>";
+		};
 		7B6C31E32BBBECED00F96260 = {
 			isa = PBXGroup;
 			children = (
@@ -128,7 +145,7 @@
 			children = (
 				7B6C31EF2BBBECED00F96260 /* AppDelegate.swift */,
 				7B6C31F12BBBECED00F96260 /* SceneDelegate.swift */,
-				7B6C320A2BBBEE8E00F96260 /* Controller */,
+				7B6C320A2BBBEE8E00F96260 /* Scene */,
 				7B6C31F52BBBECED00F96260 /* Main.storyboard */,
 				7B6C31F82BBBECF100F96260 /* Assets.xcassets */,
 				7B6C31FA2BBBECF100F96260 /* LaunchScreen.storyboard */,
@@ -137,7 +154,7 @@
 			path = MyPlants;
 			sourceTree = "<group>";
 		};
-		7B6C320A2BBBEE8E00F96260 /* Controller */ = {
+		7B6C320A2BBBEE8E00F96260 /* Scene */ = {
 			isa = PBXGroup;
 			children = (
 				7BD04AC22BC00C15003AE3DB /* ImagePicker */,
@@ -146,7 +163,7 @@
 				7B8AF78C2BC0050B00F0B642 /* MyPlant */,
 				7BE1ED742BBECE3F00B99EB4 /* AloeProduct.mov */,
 			);
-			path = Controller;
+			path = Scene;
 			sourceTree = "<group>";
 		};
 		7B8AF78C2BC0050B00F0B642 /* MyPlant */ = {
@@ -421,7 +438,6 @@
 			isa = PBXGroup;
 			children = (
 				7BD04AC32BC00E3A003AE3DB /* CustomView */,
-				7BE1ED702BBECB7100B99EB4 /* VideoPlayerController.swift */,
 			);
 			path = VideoPlayer;
 			sourceTree = "<group>";
@@ -437,8 +453,8 @@
 		7BD04AC32BC00E3A003AE3DB /* CustomView */ = {
 			isa = PBXGroup;
 			children = (
-				7BD04AC42BC00EB7003AE3DB /* CustomView.xib */,
-				7BD04ACA2BC01C91003AE3DB /* CustomView.swift */,
+				7B2000132BC3E095006B0A1E /* Reusable */,
+				7B2000122BC3DA7E006B0A1E /* View */,
 				7BD04AC82BC00FA7003AE3DB /* ExtensionCustomView.swift */,
 			);
 			path = CustomView;
@@ -704,6 +720,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 39VUM992D2;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MyPlants/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -731,6 +748,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 39VUM992D2;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MyPlants/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
