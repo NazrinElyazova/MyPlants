@@ -3,6 +3,7 @@
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -18,9 +19,8 @@
             <rect key="frame" x="0.0" y="0.0" width="619" height="40"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="PBN-fC-ZBI">
-                    <rect key="frame" x="56" y="6" width="565" height="1"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="PBN-fC-ZBI">
+                    <rect key="frame" x="66" y="4" width="525" height="34"/>
                     <color key="minimumTrackTintColor" systemColor="systemRedColor"/>
                     <color key="maximumTrackTintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <color key="thumbTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -28,29 +28,99 @@
                         <action selector="sliderAction:" destination="-1" eventType="valueChanged" id="x0W-QU-UmF"/>
                     </connections>
                 </slider>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qjr-sA-IHf">
-                    <rect key="frame" x="5" y="7" width="53" height="26"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qjr-sA-IHf">
+                    <rect key="frame" x="0.0" y="4" width="36" height="33"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="36" id="sGw-dR-QVQ"/>
+                        <constraint firstAttribute="height" constant="33" id="zIz-Rx-Sim"/>
+                    </constraints>
                     <state key="normal" title="Button"/>
-                    <buttonConfiguration key="configuration" style="plain" title="but"/>
+                    <buttonConfiguration key="configuration" style="plain">
+                        <backgroundConfiguration key="background" image="ply"/>
+                    </buttonConfiguration>
                     <connections>
                         <action selector="playAndPauseButtonAction:" destination="-1" eventType="touchUpInside" id="FjN-1Z-Gig"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GYq-Z6-EB7">
+                    <rect key="frame" x="38" y="3" width="28" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="28" id="UCN-Id-cp9"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain">
+                        <backgroundConfiguration key="background">
+                            <imageReference key="image" image="goforward.5" catalog="system" renderingMode="hierarchical-single">
+                                <hierarchicalColors>
+                                    <color systemColor="labelColor"/>
+                                    <color systemColor="secondaryLabelColor"/>
+                                    <color systemColor="tertiaryLabelColor"/>
+                                </hierarchicalColors>
+                            </imageReference>
+                        </backgroundConfiguration>
+                    </buttonConfiguration>
+                    <connections>
+                        <action selector="goForwardButton:" destination="-1" eventType="touchUpInside" id="jmy-KE-dm6"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yau-0O-ipB">
+                    <rect key="frame" x="591" y="3" width="28" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="EpY-Mj-9R6"/>
+                        <constraint firstAttribute="width" constant="28" id="VP5-KS-Xqi"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain">
+                        <backgroundConfiguration key="background">
+                            <imageReference key="image" image="gobackward.5" catalog="system" renderingMode="hierarchical-single">
+                                <hierarchicalColors>
+                                    <color systemColor="labelColor"/>
+                                    <color systemColor="secondaryLabelColor"/>
+                                    <color systemColor="tertiaryLabelColor"/>
+                                </hierarchicalColors>
+                            </imageReference>
+                        </backgroundConfiguration>
+                    </buttonConfiguration>
+                    <connections>
+                        <action selector="goBackButton:" destination="-1" eventType="touchUpInside" id="nau-8e-NiU"/>
                     </connections>
                 </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
-                <constraint firstItem="qjr-sA-IHf" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="5" id="IpR-mN-etx"/>
-                <constraint firstItem="qjr-sA-IHf" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="1" id="YqZ-nt-B6R"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="qjr-sA-IHf" secondAttribute="bottom" constant="26" id="ilB-fO-M9I"/>
+                <constraint firstItem="GYq-Z6-EB7" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="3" id="0rQ-r3-xgP"/>
+                <constraint firstItem="Yau-0O-ipB" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="3" id="4zM-cW-cZP"/>
+                <constraint firstItem="PBN-fC-ZBI" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="4" id="5IK-MO-7Yy"/>
+                <constraint firstItem="GYq-Z6-EB7" firstAttribute="centerY" secondItem="PBN-fC-ZBI" secondAttribute="centerY" id="8pB-KD-JFc"/>
+                <constraint firstItem="GYq-Z6-EB7" firstAttribute="leading" secondItem="qjr-sA-IHf" secondAttribute="trailing" constant="2" id="C2W-fv-u3W"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="PBN-fC-ZBI" secondAttribute="trailing" constant="30" id="FMb-aE-bjq"/>
+                <constraint firstItem="qjr-sA-IHf" firstAttribute="centerY" secondItem="PBN-fC-ZBI" secondAttribute="centerY" id="XdZ-Uc-IwC"/>
+                <constraint firstItem="qjr-sA-IHf" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="4" id="aXM-zc-Amk"/>
+                <constraint firstItem="PBN-fC-ZBI" firstAttribute="leading" secondItem="GYq-Z6-EB7" secondAttribute="trailing" constant="2" id="mCp-zy-ABO"/>
+                <constraint firstItem="Yau-0O-ipB" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="mVO-Ym-jRB"/>
+                <constraint firstItem="qjr-sA-IHf" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="rzV-cX-3m2"/>
+                <constraint firstItem="qjr-sA-IHf" firstAttribute="height" secondItem="PBN-fC-ZBI" secondAttribute="height" id="wr3-x8-0fk"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <point key="canvasLocation" x="203.81679389312976" y="331.69014084507046"/>
         </view>
     </objects>
     <resources>
+        <image name="gobackward.5" catalog="system" width="119" height="128"/>
+        <image name="goforward.5" catalog="system" width="119" height="128"/>
+        <image name="ply" width="512" height="512"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="secondaryLabelColor">
+            <color red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemRedColor">
             <color red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tertiaryLabelColor">
+            <color red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.29803921570000003" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
