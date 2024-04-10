@@ -48,12 +48,13 @@ final class CustomView: UIView {
         }
     }
     @IBAction func goForwardButton(_ sender: Any) {
-        delegate?.goForwardVideo(seconds: 5)
-        
+        delegate?.gobackVideo(seconds: 5)
+
     }
     
     @IBAction func goBackButton(_ sender: Any) {
-        delegate?.gobackVideo(seconds: 5)
+        delegate?.goForwardVideo(seconds: 5)
+
     }
     
     required init?(coder: NSCoder) {
